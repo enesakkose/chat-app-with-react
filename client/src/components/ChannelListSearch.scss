@@ -1,0 +1,22 @@
+.channelListContainer__text__search{
+    position: relative;
+    
+    &__input{
+        padding: $PM $PXL;    
+        background-color: rgba($white ,.1);
+        color: $white;
+        border: 1px solid rgba($white, .5);
+        border-radius: 5px;
+
+        &::placeholder{
+            color: rgba($white ,.8);
+        }
+    }
+
+    &__icon{
+        position: absolute;
+        top: 10%;
+        padding: $PS;
+        color: $white;
+    }
+}

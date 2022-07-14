@@ -1,0 +1,10 @@
+.channelListContainer{
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+
+    &__text{
+        padding: $PM;
+        background-color: rgba($primaryColor, .8);
+        height: 100%;
+    }
+}

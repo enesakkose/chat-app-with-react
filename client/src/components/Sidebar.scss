@@ -1,0 +1,9 @@
+.sidebar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: $primaryColor;
+    padding: $PM;
+    height: 100%;
+}
