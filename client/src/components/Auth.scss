@@ -1,0 +1,57 @@
+.authForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primaryColor;
+    height: 100%;
+
+    &__fields{
+        background-color: $lightWhite;
+        padding: $PXL;
+        width: 50%;
+        border-radius: 10px;
+
+        h3{
+            margin-bottom: $ML;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px; 
+        }
+
+        &__input{
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+
+            input{
+                padding: $PM;
+                border: 1px solid $gray;
+                border-radius: 5px;
+            }
+        }
+
+        &__accountPlace{
+            p{
+                margin-top: $ML;
+                
+                span{
+                    font-weight: 600;
+                    margin-left: $MS;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &__submitButton{
+            
+            .submitBtn{
+                background-color: $primaryColor;
+                border-radius: 5px;
+                color: $white;
+            }
+        }
+    }
+}

@@ -35,3 +35,5 @@ function TeamChannelList({ children, error = false, loading, type}) {
 }
 
 export default TeamChannelList
+
+// TODO SIDBAR LOST YOU HAVE TO FIND HER 
