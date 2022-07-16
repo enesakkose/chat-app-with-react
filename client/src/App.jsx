@@ -28,7 +28,7 @@ function App() {
   const [createType, setCreateType] = useState('')
   const [isCreating, setIsCreating] = useState(false)
   const [isEditing, setIsEditing] = useState(false)
-  
+
   if(!authToken) return <Auth/>
 
   return (

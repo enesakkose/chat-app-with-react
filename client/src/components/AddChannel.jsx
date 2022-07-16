@@ -9,7 +9,7 @@ function AddChannel({isCreating, setIsCreating, setCreateType, setIsEditing, set
         setIsCreating(!isCreating)
         setIsEditing(false)
         if(setToggleContainer) setToggleContainer((prevState) => !prevState)
-        
+        console.log('click')
     }
 
 

@@ -1,0 +1,55 @@
+.userList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: $PM $PXL;
+
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 $PM;
+
+        p{
+            font-weight: 600;    
+        }
+    }
+
+    &__userItem{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $PM;
+        border-radius: 5px;
+
+        &:hover{
+            background-color: $white;
+        }
+
+        &__name{
+            display: flex;
+            align-items: center;
+            
+        }
+
+        &__empty{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid $gray;
+        }
+
+        &__fill{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            background-color: $green;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            
+        }
+    }
+}
