@@ -1,0 +1,30 @@
+.createChannel{
+
+
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $PM;
+        border: 1px solid $gray;
+
+        p{
+            font-weight: 700;
+        }
+    }
+
+    &__input{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: $PM;
+        border: 1px solid $gray;
+
+        input{
+            padding: $PM;
+            border: 1px solid $gray;
+            border-radius: 5px;
+            background-color: $white;
+        }
+    }
+}

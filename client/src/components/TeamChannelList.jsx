@@ -1,7 +1,10 @@
 import React from 'react'
+import AddChannel from '@/components/AddChannel'
 import '@/components/TeamChannelList.scss'
 
-function TeamChannelList({ children, error = false, loading, type}) {
+
+
+function TeamChannelList({ children, error = false, loading, type, isCreating, setIsCreating, setCreateType, setIsEditing}) {
 
     if(error) {
         return type === 'team' ? (
@@ -27,7 +30,16 @@ function TeamChannelList({ children, error = false, loading, type}) {
   return (
     <div className='teamChannelList'>
         <div className="teamChannelList__header">
-            {type === 'team' ? 'Channels' : 'Direct Messages'}
+            <p className='teamChannelList__header__title'>
+              {type === 'team' ? 'Channels' : 'Direct Messages'}  
+            </p>
+            <AddChannel
+                isCreating={isCreating}
+                setIsCreating={setIsCreating}
+                setCreateType={setCreateType}
+                setIsEditing={setIsEditing}
+                type={type === 'team' ? 'team' : 'messaging'}
+            />
         </div>
         {children}
     </div>
@@ -36,4 +48,3 @@ function TeamChannelList({ children, error = false, loading, type}) {
 
 export default TeamChannelList
 
-// TODO SIDBAR LOST YOU HAVE TO FIND HER 

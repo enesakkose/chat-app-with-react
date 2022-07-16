@@ -1,0 +1,11 @@
+.teamChannelList{
+    &__header{
+        display: flex;
+        align-items: center;
+
+        &__title{
+            flex: 1;
+        }
+    }
+
+}

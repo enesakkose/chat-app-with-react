@@ -4,7 +4,7 @@ import '@/components/Button.scss'
 function Button({className, children, onClick}) {
   return (
     <>
-    <button className={className}>
+    <button className={className} onClick= {onClick}>
         {children}
     </button>
     </>

@@ -9,7 +9,7 @@ import TeamChannelList from '@/components/TeamChannelList'
 import TeamChannelPreview from '@/components/TeamChannelPreview'
 
 
-function ChannelListContainer() {
+function ChannelListContainer({ isCreating, setIsCreating, setCreateType, setIsEditing }) {
   return (
     <aside className='channelListContainer'>
       <Sidebar/>
@@ -23,6 +23,10 @@ function ChannelListContainer() {
               <TeamChannelList 
                 {...listProps}
                 type="team"
+                isCreating={isCreating}
+                setIsCreating={setIsCreating}
+                setCreateType={setCreateType}
+                setIsEditing={setIsEditing}
               />
             )}
             Preview={(previewProps) => (
@@ -39,6 +43,10 @@ function ChannelListContainer() {
               <TeamChannelList 
                 {...listProps}
                 type="messaging"
+                isCreating={isCreating}
+                setIsCreating={setIsCreating}
+                setCreateType={setCreateType}
+                setIsEditing={setIsEditing}
               />
             )}
             Preview={(previewProps) => (
